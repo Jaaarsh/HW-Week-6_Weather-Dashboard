@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Weather Dashboard</title>
+  </head>
+
+  <body>
+    <!--Header Code-->
+    <header class="jumbotron">
+      <h1 class="display-10">Weather Dashboard</h1>
+    </header>
+
+    <!--Left Side Search-->
+    <div class= "leftSide">
+      <div class="flex-row justify-space-between">
+        <div class="col-12 col-md-2">
+          
+            <h3 class="card-header text-uppercase">Search for a City:</h3>
+              <form id="city-form" class="card-body">
+                <input name="city" id="citySearch" type="text" autofocus="true" class="form-input" />
+              </form>
+              <button type="submit" onclick="disableButton(this)" class="cityBtn" id='searchBtn' >Search</button>
+              <button type="submit" class="clearBtn" id='clearBtn'>Clear Page</button>
+          <!--Left Side Recent Searches-->
+          <div class="list-group" id="history">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!--Search PopUp Section-->
+    <div class= "rightSide">
+      <div id="weather"></div>
+    </div>
+    
+    <!--Cards Section-->
+    <div class="card" id= "card1" style="width: 18rem;" hidden >
+    </div>
+
+    <div class="card" id= "card2" style="width: 18rem;" hidden >
+    </div>
+
+    <div class="card" id= "card3" style="width: 18rem;" hidden >
+    </div>
+
+    <div class="card" id= "card4" style="width: 18rem;" hidden >
+    </div>
+
+    <div class="card" id= "card5" style="width: 18rem;" hidden >
+    </div>
+    <!--JS Sources-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+      
